@@ -337,3 +337,81 @@ template {
 [hidden] {
   display: none;
 }
+
+/* ПОДКЛЮЧЕНИЕ НЕСТАНДАРТНЫХ ШРИФТОВ 
+---------------------------------- */
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy-ExtraBold'),
+        url('../css/fonts/Gilroy-ExtraBold.woff2') format('woff2'),
+        url('../css/fonts/Gilroy-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Light'), local('OpenSans-Light'),
+        url('../css/fonts/OpenSans-Light.woff2') format('woff2'),
+        url('../css/fonts/OpenSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans'), local('OpenSans'),
+        url('../css/fonts/OpenSans.woff2') format('woff2'),
+        url('../css/fonts/OpenSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy-Light'),
+        url('../css/fonts/Gilroy-Light.woff2') format('woff2'),
+        url('../css/fonts/Gilroy-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy-Light'),
+        url('../css/fonts/Gilroy-Light.woff2') format('woff2'),
+        url('../css/fonts/Gilroy-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans'), local('OpenSans'),
+        url('../css/fonts/OpenSans.woff2') format('woff2'),
+        url('../css/fonts/OpenSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Light'), local('OpenSans-Light'),
+        url('../css/fonts/OpenSans-Light.woff2') format('woff2'),
+        url('../css/fonts/OpenSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy-ExtraBold'),
+        url('../css/fonts/Gilroy-ExtraBold.woff2') format('woff2'),
+        url('../css/fonts/Gilroy-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* СБРОС СТАНДАРТЫХ СТИЛЕЙ БРАУЗЕРА
+---------------------------------- */
