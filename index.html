@@ -2,17 +2,17 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Главная: Интернет магазин Device</title>
+	<title>Интернет магазин Device</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<h1>Интернет магазин Device</h1>
+	<h1 class="visually_hidden">Интернет магазин Device</h1>
 	<header class="top_page">
 		<a class="logo">
 			<img class="logo_image" width="164" height="36" src="img/logo.png" alt="Логотип сайта Device">
 		</a>
 		<form class="search" action="#">
-			<label for="search">Поиск по сайту</label>
+			<label class="visually_hidden" for="search">Поиск по сайту</label>
 			<input class="search_search" type="text" name="search" id="search" placeholder="Поиск по сайту">
 			<input class="search_subbmit" type="submit" value="Найти">
 		</form>
@@ -20,7 +20,7 @@
 		<a class="compare_link" href="#">Сравнить</a>
 		<a class="basket_link" href="#">Корзина</a>
 		<nav class="navigation">
-			<h2>Навигация</h2>
+			<h2 class="visually_hidden">Главная навигация по сайту</h2>
 			<ul class="navigation_list">
 				<li class="navigation_item"><a class="navigation_link" href="#">Каталог товаров</a></li>
 				<li class="navigation_item"><a class="navigation_link" href="#">Доставка</a></li>
@@ -49,87 +49,209 @@
 			</ul>
 		</nav>
 	</header>
-	<section class="slyder-section">
-		<h2>Слайдер</h2>
-		<article class="slyder">
-			<img class="slyder_image" 
-				 src="img/slyder/slider_images_01.png" 
-				 width="384" height="486" alt="Картинка с слайдера">
+	<section class="slyder_section">
+		<h2 class="visually_hidden">Слайдер</h2>
 
-			<h3 class="caption">Делай селфи, <br>как Бен Стиллер!</h3>
-			<p class="paragraph">Самая длинная палка для селфи доступна в нашем магазине.
-				Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-			<a class="slyder_link button" href="#">Подробнее</a>
-			<input class="slyder_radio" type="radio" name="slyder_page" id="slyder" checked>
-			<input class="slyder_radio" type="radio" name="slyder_page" id="slyder">
-			<input class="slyder_radio" type="radio" name="slyder_page" id="slyder">
-			<table class="slyder_table">
-				<tr>
-					<td>8,5 м</td>
-					<td>5 кг</td>
-					<td>Карбон</td>
-				</tr>
-				<tr>
-					<td>Длина палки</td>
-					<td>Вес палки</td>
-					<td>Материал</td>
-				</tr>
-			</table>
-		</article>
+		<ul class="slyder_list">
+			<li class="slyder_item">
+				<article class="slyder">
+					<img class="slyder_image" 
+						 src="img/slyder/slider_images_01.png" 
+						 width="384" height="486" alt="Картинка с слайдера">
+		
+					<h3 class="caption">Делай селфи, <br>как Бен Стиллер!</h3>
+					<p class="paragraph">Самая длинная палка для селфи доступна в нашем магазине.
+						Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+					<a class="slyder_link button" href="#">Подробнее</a>
+
+					<input class="slyder_radio" type="radio" name="slyder_page" id="slyder_1" checked>
+					<input class="slyder_radio" type="radio" name="slyder_page" id="slyder_2">
+					<input class="slyder_radio" type="radio" name="slyder_page" id="slyder_3">
+					
+					<table class="slyder_table">
+						<tr>
+							<td>8,5 м</td>
+							<td>5 кг</td>
+							<td>Карбон</td>
+						</tr>
+						<tr>
+							<td>Длина палки</td>
+							<td>Вес палки</td>
+							<td>Материал</td>
+						</tr>
+					</table>
+
+				</article>
+			</li>
+			<li class="slyder_item">
+				<article class="slyder">
+					<img class="slyder_image" 
+						 src="img/slyder/slider_images_02.png" 
+						 width="345" height="485" alt="Картинка с слайдера">
+		
+					<h3 class="caption">Худеем<br>правильно!</h3>
+					<p class="paragraph">Мотивирующие фитнес-браслеты помогут найти в себе силы<br> не пропускать занятия и соблюдать диету.</p>
+					<a class="slyder_link button" href="#">Подробнее</a>
+
+					<input class="slyder_radio" type="radio" name="slyder_page" id="slyder_1">
+					<input class="slyder_radio" type="radio" name="slyder_page" id="slyder_2">
+					<input class="slyder_radio" type="radio" name="slyder_page" id="slyder_3">
+					
+					<table class="slyder_table">
+						<tr>
+							<td>48 часов</td>
+						</tr>
+						<tr>
+							<td>Без подзарядки</td>
+						</tr>
+					</table>
+					
+				</article>
+			</li>
+			<li class="slyder_item">
+				<article class="slyder">
+					<img class="slyder_image" 
+						 src="img/slyder/slider_images_03.png" 
+						 width="526" height="334" alt="Картинка с слайдера">
+		
+					<h3 class="caption">Порхает как бабочка,<br>жалит как пчела!</h3>
+					<p class="paragraph">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под стандартную камеру.</p>
+					<a class="slyder_link button" href="#">Подробнее</a>
+
+					<input class="slyder_radio" type="radio" name="slyder_page" id="slyder_1">
+					<input class="slyder_radio" type="radio" name="slyder_page" id="slyder_2">
+					<input class="slyder_radio" type="radio" name="slyder_page" id="slyder_3">
+					
+					<table class="slyder_table">
+						<tr>
+							<td>800 М</td>
+							<td>50 М</td>
+						</tr>
+						<tr>
+							<td>Дальность полета</td>
+							<td>Радиус поражения</td>
+						</tr>
+					</table>
+					
+				</article>
+			</li>
+		</ul>
 	</section>
 	<main>
 		<section class="categories">
-			<h2 class="caption">Категории товара</h2>
+			<h2 class="visually_hidden">Категории товара</h2>
 			<ul class="categories_list">
 				<li class="categories_item">
 					<a class="categories_link" href="#">
-						<img class="categories_image" src="#" alt="Изображение котегории товара">
+						<img class="categories_image" 
+							 src="./img/popular_1.svg"
+							 width="97" height="55"  
+							 alt="Иконка VR очков">
 						<span class="categories_name">Виртуальная реальность</span>
 					</a>
 				</li>
 				<li class="categories_item">
 					<a class="categories_link" href="#">
-						<img class="categories_image" src="#" alt="Изображение котегории товара">
+						<img class="categories_image" 
+							 src="./img/popular_2.svg" 
+							 width="86" height="117"  
+							 alt="Иконка монопода">
 						<span class="categories_name">Моноподы для селфи</span>
 					</a>
 				</li>
 				<li class="categories_item">
 					<a class="categories_link" href="#">
-						<img class="categories_image" src="#" alt="Изображение котегории товара">
+						<img class="categories_image" 
+							 src="./img/popular_3.svg" 
+							 width="71" height="87"  
+							 alt="Иконка экшн-камеры">
 						<span class="categories_name">Экшн-камеры</span>
 					</a>
 				</li>
 				<li class="categories_item">
 					<a class="categories_link" href="#">
-						<img class="categories_image" src="#" alt="Изображение котегории товара">
+						<img class="categories_image" 
+							 src="./img/popular_4.svg" 
+							 width="107" height="65"  
+							 alt="Иконка фитнес-браслета">
 						<span class="categories_name">Фитнес-браслеты</span>
 					</a>
 				</li>
 				<li class="categories_item">
 					<a class="categories_link" href="#">
-						<img class="categories_image" src="#" alt="Изображение котегории товара">
+						<img class="categories_image" 
+							 src="./img/popular_5.svg"
+							 width="56" height="98"   
+							 alt="Иконка умных часов">
 						<span class="categories_name">Умные часы</span>
 					</a>
 				</li>
 				<li class="categories_item">
 					<a class="categories_link" href="#">
-						<img class="categories_image" src="#" alt="Изображение котегории товара">
+						<img class="categories_image" 
+							 src="./img/popular_6.svg" 
+							 width="132" height="69"  
+							 alt="Иконка квадрокоптера">
 						<span class="categories_name">Квадрокоптеры</span>
 					</a>
 				</li>
 			</ul>
 		</section>
 		<section class="services">
-			<h2>Сервисы</h2>
-			<!-- НУЖНО ПОТОМ СДЕЛАТЬ! -->
+			<h2 class="visually_hidden">Сервисы</h2>
+			<div class="tabbet">
+				<div class="tabbet_menu">
+					<ul class="tabbet_menu_list">
+						<li class="tabbet_menu_item"><a class="tabbet_menu_link" href="#delivery">Доставка</a></li>
+						<li class="tabbet_menu_item"><a class="tabbet_menu_link" href="#guarantee">Гарантия</a></li>
+						<li class="tabbet_menu_item"><a class="tabbet_menu_link" href="#credit">Кредит</a></li>
+					</ul>
+				</div>
+				<div class="tabbet_content">
+					<ul class="tabbet_content_list">
+						<li class="tabbet_content_item">
+							<h3 id="delivery" class="tabbet_content_caption">Доставка</h3>
+							<p class="tabbet_content_text">Мы с удовольствием доставим ваш товар прямо к вашему<br>подъезду совершенно бесплатно! Ведь мы неплохо<br>заработаем, поднимая его на ваш этаж.</p>
+						</li>
+						<li class="tabbet_content_item">
+							<h3 id="guarantee" class="tabbet_content_caption">Гарантия</h3>
+							<p class="tabbet_content_text">Если из-за возгорания купленного у нас товара у вас сгорит<br>дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
+						</li>
+						<li class="tabbet_content_item">
+							<h3 id="credit" class="tabbet_content_caption">Кредит</h3>
+							<p class="tabbet_content_text">Залезть в долговую яму стало проще! Кредитные<br> консультанты подберут для вас наиболее выгодные<br>условия кредита. Выгодные для нашего банка, разумеется.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</section>
 		<section class="brands">
-			<h2>Бренды</h2>
+			<h2 class="visually_hidden">Бренды</h2>
 			<ul class="brands_list">
-				<li class="brands_item"><a class="brands_link" href="#"><span>Название бренда</span></a></li>
-				<li class="brands_item"><a class="brands_link" href="#"><span>Название бренда</span></a></li>
-				<li class="brands_item"><a class="brands_link" href="#"><span>Название бренда</span></a></li>
-				<li class="brands_item"><a class="brands_link" href="#"><span>Название бренда</span></a></li>
+				<li class="brands_item">
+					<img class="brands_link" 
+						 src="./img/brand_logo_1.png"
+						 width="127" height="73"  
+						 alt="Логотип компании Dji">
+				</li>
+				<li class="brands_item">
+					<img class="brands_link" 
+						 src="./img/brand_logo_2.png"
+						 width="256" height="48"  
+						 alt="Логотип компании SP Gadgets">
+				</li>
+				<li class="brands_item">
+					<img class="brands_link" 
+						 src="./img/brand_logo_3.png"
+						 width="184" height="48"  
+						 alt="Логотип компании GoPro">
+				</li>
+				<li class="brands_item">
+					<img class="brands_link" 
+						 src="./img/brand_logo_4.png"
+						 width="200" height="56"  
+						 alt="Логотип компании Vive">
+				</li>
 			</ul>
 		</section>
 		<section class="about_us">
@@ -150,12 +272,12 @@
 			<p class="paragraph">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br> проверить работоспособность покупки. Всякое бывает.</p>
 			<img src="img/photo/map.jpg" 
 				 width="560" height="222" 
-				 alt="Карта">
+				 alt="Наш офис находится город Москва, улица Строителей, дом 15">
 			<a class="button" href="#">Напишите нам</a>
 		</section>
 	</main>
 	<footer class="footer">
-		<h2>Нижний колонтитул</h2>
+		<h2 class="visually_hidden">Нижний колонтитул</h2>
 		<a>
 			<img class="logo" width="163" height="36" src="img/logo_footer.png" alt="Логотип сайта Device в футере">
 		</a>
@@ -172,17 +294,17 @@
 			<li class="navigation_item"><a class="navigation_link" href="#">Контакты</a></li>
 		</ul>  
 		<ul class="social">
-			<li class="social_item"><a class="social_link" href="#">Фейсбук</a></li>
-			<li class="social_item"><a class="social_link" href="#">Инстаграм</a></li>
-			<li class="social_item"><a class="social_link" href="#">Твиттер</a></li>
+			<li class="social_item"><a class="social_link" href="#"><span class="visually_hidden">Фейсбук</span></a></li>
+			<li class="social_item"><a class="social_link" href="#"><span class="visually_hidden">Инстаграм</span></a></li>
+			<li class="social_item"><a class="social_link" href="#"><span class="visually_hidden">Твиттер</span></a></li>
 		</ul>
 		<a class="htmlacademy_link" href="#">
-			<img class="htmlacademy_logo" width="26.943px" height="34.09px" src="./img/logo-htmlacademy.svg" alt="HTMLAcademy">
+			<span class="visually_hidden">Перейти на сайт html Academy</span>
 		</a>
 	</footer>	
 	<!-- POP-UPs -->
 	<div class="pop_up">
-		<button class="pop_up_button">Закрыть</button>
+		<button class="pop_up_button"><span class="visually_hidden">Закрыть окно обратной связи</span></button>
 		<div class="pop_up_write_to_us">
 			<form action="#">
 				<label for="name">Ваше имя:</label>
@@ -196,7 +318,7 @@
 		</div>
 	</div>
 	<div class="pop_up">
-		<button class="pop_up_button">Закрыть</button>
+		<button class="pop_up_button"><span class="visually_hidden">Закрыть карту</span></button>
 		<div class="pop_up_map">
 		</div>
 	</div>
