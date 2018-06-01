@@ -16,9 +16,18 @@
 			<input class="search_search" type="text" name="search" id="search" placeholder="Поиск по сайту">
 			<input class="search_subbmit" type="submit" value="Найти">
 		</form>
-		<a class="login_link" href="#">Войти</a>
-		<a class="compare_link" href="#">Сравнить</a>
-		<a class="basket_link" href="#">Корзина</a>
+		<ul class="user_block_list">
+			<li class="user_block_item">
+				<a class="login_link" href="#">Войти</a>
+			</li>
+			<li class="user_block_item">
+				<a class="compare_link" href="#">Сравнить</a>
+			</li>
+			<li class="user_block_item">
+				<a class="basket_link" href="#">Корзина</a>
+			</li>
+		</ul>
+		 
 		<nav class="navigation">
 			<h2 class="visually_hidden">Главная навигация по сайту</h2>
 			<ul class="navigation_list">
@@ -60,9 +69,9 @@
 						 width="384" height="486" alt="Картинка с слайдера">
 		
 					<h3 class="caption">Делай селфи, <br>как Бен Стиллер!</h3>
-					<p class="paragraph">Самая длинная палка для селфи доступна в нашем магазине.
+					<p class="paragraph">Самая длинная палка для селфи доступна в нашем магазине.<br>
 						Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-					<a class="slyder_link button" href="#">Подробнее</a>
+					<a class="button slyder_link" href="#">Подробнее</a>
 
 					<ul class="slyder_list">
 						<li class="slyder_item"><button class="slyder_button"><span class="visually_hidden">Перейти на слайдер 1</span></button></li>
@@ -72,9 +81,9 @@
 					
 					<table class="slyder_table">
 						<tr>
-							<td>8,5 м</td>
-							<td>5 кг</td>
-							<td>Карбон</td>
+							<th>8,5 м</th>
+							<th>5 кг</th>
+							<th>Карбон</th>
 						</tr>
 						<tr>
 							<td>Длина палки</td>
@@ -103,7 +112,7 @@
 					
 					<table class="slyder_table">
 						<tr>
-							<td>48 часов</td>
+							<th>48 часов</th>
 						</tr>
 						<tr>
 							<td>Без подзарядки</td>
@@ -130,8 +139,8 @@
 					
 					<table class="slyder_table">
 						<tr>
-							<td>800 М</td>
-							<td>50 М</td>
+							<th>800 М</th>
+							<th>50 М</th>
 						</tr>
 						<tr>
 							<td>Дальность полета</td>
@@ -153,8 +162,8 @@
 							 src="./img/popular_1.svg"
 							 width="97" height="55"  
 							 alt="Иконка VR очков">
-						<span class="categories_name">Виртуальная реальность</span>
 					</a>
+					<span class="categories_name">Виртуальная реальность</span>
 				</li>
 				<li class="categories_item">
 					<a class="categories_link" href="#">
@@ -162,8 +171,8 @@
 							 src="./img/popular_2.svg" 
 							 width="86" height="117"  
 							 alt="Иконка монопода">
-						<span class="categories_name">Моноподы для селфи</span>
 					</a>
+					<span class="categories_name">Моноподы для селфи</span>
 				</li>
 				<li class="categories_item">
 					<a class="categories_link" href="#">
@@ -171,8 +180,8 @@
 							 src="./img/popular_3.svg" 
 							 width="71" height="87"  
 							 alt="Иконка экшн-камеры">
-						<span class="categories_name">Экшн-камеры</span>
 					</a>
+					<span class="categories_name">Экшн-камеры</span>
 				</li>
 				<li class="categories_item">
 					<a class="categories_link" href="#">
@@ -180,8 +189,8 @@
 							 src="./img/popular_4.svg" 
 							 width="107" height="65"  
 							 alt="Иконка фитнес-браслета">
-						<span class="categories_name">Фитнес-браслеты</span>
 					</a>
+					<span class="categories_name">Фитнес-браслеты</span>
 				</li>
 				<li class="categories_item">
 					<a class="categories_link" href="#">
@@ -189,8 +198,8 @@
 							 src="./img/popular_5.svg"
 							 width="56" height="98"   
 							 alt="Иконка умных часов">
-						<span class="categories_name">Умные часы</span>
 					</a>
+					<span class="categories_name">Умные часы</span>
 				</li>
 				<li class="categories_item">
 					<a class="categories_link" href="#">
@@ -198,8 +207,8 @@
 							 src="./img/popular_6.svg" 
 							 width="132" height="69"  
 							 alt="Иконка квадрокоптера">
-						<span class="categories_name">Квадрокоптеры</span>
 					</a>
+					<span class="categories_name">Квадрокоптеры</span>
 				</li>
 			</ul>
 		</section>
@@ -234,30 +243,10 @@
 		<section class="brands">
 			<h2 class="visually_hidden">Бренды</h2>
 			<ul class="brands_list">
-				<li class="brands_item">
-					<img class="brands_link" 
-						 src="./img/brand_logo_1.png"
-						 width="127" height="73"  
-						 alt="Логотип компании Dji">
-				</li>
-				<li class="brands_item">
-					<img class="brands_link" 
-						 src="./img/brand_logo_2.png"
-						 width="256" height="48"  
-						 alt="Логотип компании SP Gadgets">
-				</li>
-				<li class="brands_item">
-					<img class="brands_link" 
-						 src="./img/brand_logo_3.png"
-						 width="184" height="48"  
-						 alt="Логотип компании GoPro">
-				</li>
-				<li class="brands_item">
-					<img class="brands_link" 
-						 src="./img/brand_logo_4.png"
-						 width="200" height="56"  
-						 alt="Логотип компании Vive">
-				</li>
+				<li class="brands_item"><a class="brands_hover brand_1" href="#"></a></li>
+				<li class="brands_item"><a class="brands_hover brand_2" href="#"></a></li>
+				<li class="brands_item"><a class="brands_hover brand_3" href="#"></a></li>
+				<li class="brands_item"><a class="brands_hover brand_4" href="#"></a></li>
 			</ul>
 		</section>
 		<section class="about_us">
@@ -266,10 +255,10 @@
 
 			<p class="paragraph">Мы можем доставить ваш товар в самые отдаленные точки<br> России! DEVICE работает со многими транспортными компаниями:</p>
 
-			<ul>
-				<li><b>Деловые Линии</b></li>
-				<li><b>Автотрейдинг</b></li>
-				<li><b>ЖелДорЭкспедиция</b></li>
+			<ul class="partner_list">
+				<li class="partner_item"><b>Деловые Линии</b></li>
+				<li class="partner_item"><b>Автотрейдинг</b></li>
+				<li class="partner_item"><b>ЖелДорЭкспедиция</b></li>
 			</ul>
 			<a class="button" href="#">Подробнее о нас</a>
 		</section>
@@ -287,11 +276,21 @@
 		<a>
 			<img class="logo" width="163" height="36" src="img/logo_footer.png" alt="Логотип сайта Device в футере">
 		</a>
-		<a class="login_link" href="#">Войти</a>
-		<a class="compare_link" href="#">Сравнить</a>
-		<a class="basket_link" href="#">Корзина</a>
+		<ul class="user_block_list">
+			<li class="user_block_item">
+				<a class="login_link" href="#">Войти</a>
+			</li>
+			<li class="user_block_item">
+				<a class="compare_link" href="#">Сравнить</a>
+			</li>
+			<li class="user_block_item">
+				<a class="basket_link" href="#">Корзина</a>
+			</li>
+		</ul>
 		<address class="address">
 			<span class="address_address">г. Москва, ул. Строителей, 15</span>
+		</address>
+		<address class="address">
 			<span class="address_phone">Тел.: +7 (495) 495-95-95</span>
 		</address>
 		<ul class="navigation_list">
@@ -300,30 +299,30 @@
 			<li class="navigation_item"><a class="navigation_link" href="#">Контакты</a></li>
 		</ul>  
 		<ul class="social">
-			<li class="social_item"><a class="social_link" href="#"><span class="visually_hidden">Фейсбук</span></a></li>
-			<li class="social_item"><a class="social_link" href="#"><span class="visually_hidden">Инстаграм</span></a></li>
-			<li class="social_item"><a class="social_link" href="#"><span class="visually_hidden">Твиттер</span></a></li>
+			<li class="social_item"><a class="social_link fb" href="#"><span class="visually_hidden">Фейсбук</span></a></li>
+			<li class="social_item"><a class="social_link inst" href="#"><span class="visually_hidden">Инстаграм</span></a></li>
+			<li class="social_item"><a class="social_link twit" href="#"><span class="visually_hidden">Твиттер</span></a></li>
 		</ul>
 		<a class="htmlacademy_link" href="#">
 			<span class="visually_hidden">Перейти на сайт html Academy</span>
 		</a>
 	</footer>	
 	<!-- POP-UPs -->
-	<div class="pop_up">
+	<div class="pop_up" hidden>
 		<button class="pop_up_button"><span class="visually_hidden">Закрыть окно обратной связи</span></button>
 		<div class="pop_up_write_to_us">
 			<form action="#">
 				<label for="name">Ваше имя:</label>
-				<input type="text" name="name" id="name">
+				<input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
 				<label for="email">Ваш e-mail:</label>
-				<input type="text" name="email" id="email">
+				<input type="text" name="email" id="email" placeholder="Для отправки ответа">
 				<label for="message">Текст письма:</label>	
-				<textarea name="message" id="message" cols="30" rows="10"></textarea>
+				<textarea name="message" id="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
 				<input class="button" type="submit" value="Отправить">
 			</form>
 		</div>
 	</div>
-	<div class="pop_up">
+	<div class="pop_up" hidden>
 		<button class="pop_up_button"><span class="visually_hidden">Закрыть карту</span></button>
 		<div class="pop_up_map">
 		</div>
